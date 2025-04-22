@@ -1,0 +1,60 @@
+:root {
+  --color-primary: #8BAC3E;
+  --color-primary-light: #F0FEEB;
+  --color-primary-bg: #F9FFF6;
+
+  --color-secondary: #40A2B1;
+  --color-secondary-light: #E6F3F5;
+
+  --color-accent-blue: #405EB6;
+  --color-accent-blue-light: #EAEEFA;
+  
+  --color-accent-pink: #B23F74;
+  --color-accent-pink-light: #F9EEF3;
+  
+  --color-accent-olive: #A4B441;
+  --color-accent-olive-light: #F3F7D9;
+
+  --color-background: var(--color-primary-bg);
+  --color-foreground: #171717;
+}
+
+.bg-primary {
+  background-color: var(--color-primary-light);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary-light);
+}
+
+.bg-accent-blue {
+  background-color: var(--color-accent-blue-light);
+}
+
+.bg-accent-pink {
+  background-color: var(--color-accent-pink-light);
+}
+
+.bg-accent-olive {
+  background-color: var(--color-accent-olive-light);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent-blue {
+  color: var(--color-accent-blue);
+}
+
+.text-accent-pink {
+  color: var(--color-accent-pink);
+}
+
+.text-accent-olive {
+  color: var(--color-accent-olive);
+} 
