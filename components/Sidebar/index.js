@@ -1,8 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { IoClose } from 'react-icons/io5';
-import Button from './Button';
+import Button from '../Button';
+import NavLink from '../NavLink';
+import { NAVIGATION_LINKS } from '../../constants/navigation';
 
 const Sidebar = ({ isOpen, onClose }) => {
   return (
@@ -21,34 +22,22 @@ const Sidebar = ({ isOpen, onClose }) => {
         </button>
 
         <div className="mt-8 md:mt-10 flex flex-col space-y-8 md:space-y-10">
-          <Link
-            href="/about"
-            className="text-[#757575] text-lg md:text-xl hover:text-primary transition-colors"
-            onClick={onClose}
-          >
-            About
-          </Link>
-          <Link
-            href="/blogs"
-            className="text-[#757575] text-lg md:text-xl hover:text-primary transition-colors"
-            onClick={onClose}
-          >
-            Blogs
-          </Link>
-          <Link
-            href="/contact"
-            className="text-[#757575] text-lg md:text-xl hover:text-primary transition-colors"
-            onClick={onClose}
-          >
-            Contact Us
-          </Link>
+          {NAVIGATION_LINKS.map((link) => (
+            <NavLink
+              key={link.href}
+              {...link}
+              className="text-[#757575] text-lg md:text-xl"
+              onClick={onClose}
+              isSidebar={true}
+            />
+          ))}
           <Button
             variant="primary"
             className="justify-start !p-0 text-lg md:text-xl rounded-full"
             onClick={onClose}
           >
             Masuk
-          </Button>
+          </Button>     
         </div>
       </div>
     </motion.div>
