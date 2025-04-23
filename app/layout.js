@@ -1,6 +1,7 @@
 import { Rubik } from "next/font/google";
 import "../styles/globals.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -16,10 +17,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} antialiased`}
+        className={`${rubik.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
