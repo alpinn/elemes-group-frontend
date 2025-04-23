@@ -18,7 +18,7 @@ const SocialIcon = ({ icon }) => {
 
 const Footer = () => {
   return (
-    <div className="px-0 sm:px-6 lg:px-8">
+    <div className="px-0 lg:px-6 xl:px-8">
       <footer className="bg-footer pt-8 sm:pt-12 lg:pt-16 pb-6 sm:pb-8 rounded-xl">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 px-4 sm:px-6">
