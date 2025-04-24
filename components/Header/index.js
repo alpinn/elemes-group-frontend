@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../Button';
@@ -11,10 +11,21 @@ import { NAVIGATION_LINKS } from '../../constants/navigation';
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setHasScrolled(scrollPosition > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-white">
+      <header className={`fixed top-0 z-50 w-full transition-all duration-300 bg-white lg:bg-transparent ${hasScrolled ? 'lg:bg-white shadow-md' : ''}`}>
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center">

@@ -4,7 +4,7 @@ const NavLink = ({ href, label, className = '', onClick, badge, isSidebar }) => 
   return (
     <Link
       href={href}
-      className={`text-gray-700 transition-all duration-300 ease-in-out hover:-translate-y-0.5 relative inline-flex items-center ${className}`}
+      className={`text-gray-500 transition-all duration-300 ease-in-out hover:-translate-y-0.5 relative inline-flex items-center ${className}`}
       onClick={onClick}
     >
       {label}
