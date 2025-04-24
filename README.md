@@ -110,7 +110,7 @@ heroku config:set NODE_ENV=production
 # Add Heroku as a remote
 git remote add heroku https://git.heroku.com/your-app-name.git
 
-# Push to Heroku
+# Push to Heroku.
 git push heroku main
 ```
 
