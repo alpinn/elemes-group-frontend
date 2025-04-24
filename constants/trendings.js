@@ -62,5 +62,21 @@ export const TRENDING_ITEMS = [
       rating: 4,
       image: '/images/kebab2.svg',
       bgColor: 'bg-accent-blue-light'
-    }
+    },
+    {
+      id: 9,
+      name: 'Kathi Kebab',
+      category: 'Kebab',
+      rating: 4,
+      image: '/images/kebab2.svg',
+      bgColor: 'bg-accent-blue-light'
+    },
+    {
+      id: 10,
+      name: 'Kathi Kebab',
+      category: 'Kebab',
+      rating: 4,
+      image: '/images/kebab2.svg',
+      bgColor: 'bg-accent-blue-light'
+    },
   ]; 
