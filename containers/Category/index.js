@@ -11,7 +11,7 @@ const Category = () => {
   };
 
   return (
-    <section className="py-12 lg:py-16">
+    <section className="pt-12 pb-8 lg:pt-16 lg:pb-8">
       <div className="container mx-auto px-4">
         <div className="mb-8">
           <h2 className="text-2xl lg:text-3xl font-bold mb-2">

@@ -15,10 +15,10 @@ const TrendingCard = ({ name, category, rating, image, bgColor }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
-      className="h-[120px] sm:h-[130px] md:h-[140px]"
+      className="h-[140px] sm:h-[180px] md:h-[200px] lg:h-[220px]"
     >
       <motion.div 
-        className={`relative ${bgColor} rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 cursor-pointer h-full`}
+        className={`relative ${bgColor} rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 lg:p-6 cursor-pointer h-full`}
         whileHover={{ 
           scale: 1.02,
           transition: { duration: 0.2 }
@@ -41,7 +41,7 @@ const TrendingCard = ({ name, category, rating, image, bgColor }) => {
         </motion.div>
 
         <div className="relative z-10 flex flex-col h-full">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 self-start mb-2 sm:mb-3">
+          <div className="relative w-16 h-16 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-32 lg:h-40 self-start mb-2 sm:mb-3">
             <Image
               src={image}
               alt={name}
@@ -65,7 +65,7 @@ const Trending = () => {
   const displayedItems = showAll ? TRENDING_ITEMS : TRENDING_ITEMS.slice(0, 8);
 
   return (
-    <section className="py-8 sm:py-10 md:py-12 lg:py-16 px-3 sm:px-4">
+    <section className="pt-4 pb-8 sm:pt-6 md:pt-8 lg:pt-8 px-3 sm:px-4">
       <div className="container mx-auto">
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2">Browser Our Trending</h2>
@@ -92,7 +92,7 @@ const Trending = () => {
           >
             <Button 
               variant="primary"
-              className="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-sm bg-green-600 hover:bg-green-700"
+              className="px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-sm bg-primary"
               withAnimation
               onClick={() => setShowAll(true)}
             >

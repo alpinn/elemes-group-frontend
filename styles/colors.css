@@ -20,25 +20,17 @@
   --color-grey-light: #E5E5E5;
 }
 
-.bg-primary {
-  background-color: var(--color-primary);
-}
-
-.bg-secondary {
-  background-color: var(--color-secondary-light);
-}
-
-.bg-accent-blue {
-  background-color: var(--color-accent-blue-light);
-}
-
-.bg-accent-pink {
-  background-color: var(--color-accent-pink-light);
-}
-
-.bg-accent-olive {
-  background-color: var(--color-accent-olive-light);
-}
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-light { background-color: var(--color-primary-light); }
+.bg-primary-bg { background-color: var(--color-primary-bg); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-light { background-color: var(--color-secondary-light); }
+.bg-accent-blue { background-color: var(--color-accent-blue); }
+.bg-accent-blue-light { background-color: var(--color-accent-blue-light); }
+.bg-accent-pink { background-color: var(--color-accent-pink); }
+.bg-accent-pink-light { background-color: var(--color-accent-pink-light); }
+.bg-accent-olive { background-color: var(--color-accent-olive); }
+.bg-accent-olive-light { background-color: var(--color-accent-olive-light); }
 
 .bg-footer {
   background-color: var(--color-primary-bg);  
