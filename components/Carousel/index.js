@@ -34,7 +34,7 @@ const Carousel = ({ children }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
@@ -50,7 +50,7 @@ const Carousel = ({ children }) => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           infinite: true,
         }
       },
@@ -64,7 +64,7 @@ const Carousel = ({ children }) => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           infinite: true,
           centerMode: true,
           centerPadding: '30px',
@@ -76,7 +76,7 @@ const Carousel = ({ children }) => {
           slidesToShow: 1,
           infinite: true,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '35px',
         }
       }
     ]

@@ -25,11 +25,11 @@ const Category = () => {
         <div className="min-h-[280px] -mx-4">
           <Carousel>
             {CATEGORIES.map((category) => (
-              <div key={category.id} className="px-2 sm:px-3 lg:px-4">
+              <div key={category.id} className="px-2">
                 <Card 
                   {...category}
                   onClick={() => handleCategoryClick(category)}
-                  className="py-6 px-4 w-[180px] sm:w-[200px] md:w-[250px] lg:w-[280px] xl:w-[300px]"
+                  className="py-8 px-6 w-[220px] sm:w-[240px] md:w-[270px] lg:w-[290px]"
                 />
               </div>
             ))}
