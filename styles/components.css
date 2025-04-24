@@ -32,6 +32,15 @@
   color: var(--color-primary);
 }
 
+.button--grey {
+  background-color: var(--color-grey);
+  color: var(--color-foreground);
+}
+
+.button--grey:hover {
+  background-color: var(--color-grey-light);
+}
+
 .card {
   padding: 1rem;
   border-radius: 0.5rem;
